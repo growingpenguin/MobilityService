@@ -121,6 +121,16 @@ ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0
 ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -6.28}}"
 ```
 
+**pub_turnleft_90degrees** <br/>
+```
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.57}}"  # Turn left 90 degrees (π/2 radians)
+```
+**pub_turnright_90degrees** <br/>
+```
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.57}}"  # Turn left 90 degrees (π/2 radians)
+```
+
+
 ### bag record
 ```
 ros2 bag record <topic_name1> <topic_name2> <topic_name3>
